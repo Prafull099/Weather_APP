@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherZen - Check Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-content">
+      <span class="emoji">🌤️</span>
+      <h1>Check Your Weather</h1>
+      <p class="subtitle">Enter your name and city to begin</p>
+    </div>
+    <div class="header-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,0 C480,80 960,0 1440,80 L1440,0 L0,0 Z" fill="rgba(255,255,255,0.05)" />
+      </svg>
+    </div>
+  </header>
+
+  <section class="form-container">
+    <div class="glass-box">
+      <h2>Enter Details</h2>
+      <label for="name-input">Name</label>
+      <input type="text" id="name-input" placeholder="Enter your name" required />
+      <label for="city-input">City</label>
+      <input type="text" id="city-input" placeholder="Enter city name" required />
+      <button id="btn">Find Weather</button>
+    </div>
+  </section>
+
+  <button id="theme-toggle">🌓 Toggle Theme</button>
+
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

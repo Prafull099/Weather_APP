@@ -1,0 +1,45 @@
+<!-- ✅ result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherZen - Result</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-content">
+      <span class="emoji">🌈</span>
+      <h1>Weather Report</h1>
+      <p class="subtitle">Here are your weather details</p>
+    </div>
+    <div class="header-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,0 C480,80 960,0 1440,80 L1440,0 L0,0 Z" fill="rgba(255,255,255,0.05)" />
+      </svg>
+    </div>
+  </header>
+
+  <section class="weather-output">
+    <div class="glass-box" id="weather-box">
+      <!-- Weather data will be inserted here -->
+    </div>
+
+    <div class="forecast" id="forecast-box">
+      <!-- Forecast cards will be inserted here -->
+    </div>
+  </section>
+
+  <div id="loader" style="display: none; text-align: center; margin-top: 2rem; color: white;">
+    <p>Loading weather data...</p>
+  </div>
+
+  <button id="theme-toggle">🌓 Toggle Theme</button>
+  <!-- <script src="result.js"></script> -->
+   <!-- At the end of body -->
+<script src="result.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
